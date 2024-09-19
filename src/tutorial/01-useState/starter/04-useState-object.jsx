@@ -8,7 +8,10 @@ const UseStateObject = () => {
   });
 
   const displayPerson = () => {
-    setPerson({name:'john', age:28, hobby:'scream at the computer'});
+    // setPerson({name:'john', age:28, hobby:'scream at the computer'}); //dize değerleri iletilir.
+    //setPerson('ShakeAndBake');
+    //setPerson({name:'Susan'});
+    setPerson({...person, name:'Susan'});
   };
   return (
     <>

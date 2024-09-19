@@ -1,5 +1,5 @@
-import Starter from './tutorial/01-useState/starter/04-useState-object';
-import Final from './tutorial/01-useState/final/04-useState-object.jsx';
+import Starter from './tutorial/03-conditional-rendering/starter/01-multiple-returns-basics.jsx';
+import Final from './tutorial/03-conditional-rendering/final/01-multiple-returns-basics.jsx';
 
 function App() {
   return (
