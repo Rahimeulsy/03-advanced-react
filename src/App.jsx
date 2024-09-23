@@ -1,11 +1,10 @@
-import { Test } from './Test';
-import Example from "./tutorial/04-project-structure/starter/Example";
+import Lİst from "./tutorial/05-leverage-javascript/starter/List";
 
 function App() {
   return (
     <div className='container'>
-     <Example/>
-     <Test     />
+<h2>Leverage JavaScript</h2>
+<Lİst/>
     </div>
   );
 }
