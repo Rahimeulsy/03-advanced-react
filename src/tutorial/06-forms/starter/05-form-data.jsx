@@ -4,7 +4,15 @@ const UncontrolledInputs = () => {
   const [value, setValue] = useState(0);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); //Formun varsayılan davranışını (sayfanın yeniden yüklenmesini) engeller.
+    const formData = new FormData(e.currentTarget);
+    // console.log(FormData);
+    // const email= formData.get('email');
+    // console.log([...formData.entries()]);
+    const newUser = Object.fromEntries(formData);
+    console.log(newUser);
+    setValue(value+1);
+    e.currentTarget.reset();//Formun tüm alanlarını sıfırlar (boşaltır).
   };
   return (
     <div>
